@@ -3,13 +3,17 @@
   <persistence-unit name="streaming_PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>streaming.entity.Effacemoi</class>
+    <class>streaming.entity.Film</class>
+    <class>streaming.entity.Serie</class>
+    <class>streaming.cookie.util.CookieUtil</class>
+    <class>streaming.entity.Utilisateur</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/streaming"/>
       <property name="javax.persistence.jdbc.user" value="streaming"/>
       <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
       <property name="javax.persistence.jdbc.password" value="streaming"/>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
     </properties>
   </persistence-unit>
 </persistence>

@@ -12,7 +12,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import streaming.service.EffacemoiCrudService;
 
 /**
  *
@@ -22,11 +21,11 @@ import streaming.service.EffacemoiCrudService;
 public class MyServiceServlet extends AutowireServlet {
 
     @Autowired
-    private EffacemoiCrudService service;
+//    private EffacemoiCrudService service;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         
-        System.out.println( "*** Nombre de records: " + service.count() );
+//        System.out.println( "*** Nombre de records: " + service.count() );
     }
 }
