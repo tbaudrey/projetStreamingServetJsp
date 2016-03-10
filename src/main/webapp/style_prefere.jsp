@@ -17,6 +17,7 @@
                 <select name="Style">
                     <option value="1">style rouge</option>
                     <option value="2">style vert</option>
+                    <option value="3">style magenta</option>
                 </select>
                 <input type="submit"/>
         </form>

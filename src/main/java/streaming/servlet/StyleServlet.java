@@ -34,6 +34,9 @@ public class StyleServlet extends HttpServlet {
         if(style.equals("2")){
             c.setValue("2");
         }
+        if(style.equals("3")){
+            c.setValue("3");
+        }
         
         resp.addCookie(c);
 //        req.getRequestDispatcher("lister_films.jsp").include(req, resp);

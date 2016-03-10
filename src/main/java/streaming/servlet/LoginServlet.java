@@ -43,7 +43,6 @@ public class LoginServlet extends AutowireServlet {
         utilisateurService.save(u3);
         utilisateurService.save(u4);
         
-        
         List<Utilisateur> maListeUtilisateur = new ArrayList<>();
         maListeUtilisateur=(List<Utilisateur>) utilisateurService.findAll();
        

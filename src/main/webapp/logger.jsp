@@ -18,6 +18,7 @@
         <div>
             Bonjour ${sessionScope.login}
         </div>
+        <a href="ListerFilms">Home</a>
         <c:import url="_PIED.jsp"/>
     </body>
 </html>
